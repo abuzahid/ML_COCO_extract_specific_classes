@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
             # create text file for annotation
             with open(os.path.splitext(DARKNET_FOLDER + "data/obj/" + img_name)[0]+".txt" , "w+") as fp:
-            	fp.write("{} {} {} {} {} \n".format(class_counter, a, b, c, d))
+            	fp.write("{} {} {} {} {} \n".format(cat_id, a, b, c, d))
 
             image_counter += 1
             print("{}/{} Image .. {}/{} Class\n".format(image_counter, len(anns), class_counter+1, len(cat_names)))
